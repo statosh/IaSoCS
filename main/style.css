@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    gap: 30px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.greetings {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.greet-name {
+    color: #8b5cf6;
+}
+
+.quick-access-text, .last-message-text, .usage-stats-text {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.сont-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.file-block, .chats-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.file-block:hover, .chats-block:hover {
+    border-color: #8b5cf6;
+    background-color: #252525;
+}
+
+span {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.ext-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+.doc-block, .pdf-block, .jpg-block, .xls-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #333;
+    color: #ccc;
+    transition: transform 0.2s;
+}
+
+.doc-block:hover, .pdf-block:hover, .jpg-block:hover, .xls-block:hover {
+    transform: translateY(-2px);
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #555;
+}
+
+.chat-block {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+}
+
+.chat-block li {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 4px solid #8b5cf6;
+    color: #ddd;
+}
+
+.disk-usage {
+    width: 100%;
+    height: 12px;
+    background-color: #333;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.disk-usage::after {
+    content: '';
+    display: block;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+    border-radius: 6px;
+}

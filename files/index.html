@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            Шапка
+        </header>
+        <div class="content">
+            <div class="selection-blocks">
+                <div class="my-files-block">Мои файлы</div>
+                <div class="download-block">Загрузить</div>
+                <div class="create-folder-block">Создать папку</div>
+            </div>
+            <div class="search-blocks">
+                <input class="search">
+                <div class="search-button">Найти</div>
+            </div>
+            <h2 class="file-path-text">Путь: <span class="file-path"></span></h2>
+            <table class="file-tree-table">
+                <tr>
+                    <th class="name-column">Имя</th>
+                    <th class="file-size-column">Размер</th>
+                    <th class="file-changed-column">Изменен</th>
+                    <th class="actions-column">Действия</th>
+                </tr>
+                <tr>
+                    <td>Проекты</td>
+                    <td>---</td>
+                    <td>вчера</td>
+                    <td>[:]</td>
+                </tr>
+                <tr>
+                    <td>Отчёт.pdf</td>
+                    <td>2.5 МБ</td>
+                    <td>10:30</td>
+                    <td>[:]</td>
+                </tr>
+            </table>
+            <h2 class="selected-file-info-text">Информация о выбранном файле</h2>
+            <div class="selected-file-block">
+                <div class="selected-file-name-text">Имя: <span class="selected-file-name"></span></div>
+                <div class="selected-file-size-text">Размер: <span class="selected-file-size"></span></div>
+                <div class="selected-file-uploader-text">Загрузил: <span class="selected-file-uploader"></span></div>
+                <div class="selected-file-downloaded-text">Скачиваний: <span class="selected-file-downloaded"></span></div>
+            </div>
+            <div class="selected-file-action-blocks">
+                <div class="selected-file-action-download">Скачать</div>
+                <div class="selected-file-action-rename">Размер</div>
+                <div class="selected-file-action-remove">Удалить</div>
+            </div>
+        </div>
+    </body>
+</html>
